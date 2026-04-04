@@ -16,7 +16,7 @@ export default function Contact() {
     <main className="min-h-screen bg-black flex flex-col">
       <Header />
 
-      <section className="flex-1 flex flex-col px-6 py-16 md:py-24">
+      <section className="flex-1 flex flex-col px-3 lg:px-4 py-10 md:py-24">
         {/* Header */}
         <motion.div
           initial={{ y: 20, opacity: 0, filter: 'blur(10px)' }}
@@ -28,7 +28,7 @@ export default function Contact() {
           }}
           className="mb-12 md:mb-20"
         >
-          <h1 className="text-[79px] lg:text-[160px] flex items-center font-regular text-white tracking-tighter text-left leading-tight">
+          <h1 className="text-[59px] lg:text-[160px] flex items-center font-regular text-white tracking-tighter text-left leading-tight">
             Contact us
           </h1>
         </motion.div>
