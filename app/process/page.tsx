@@ -99,9 +99,9 @@ export default function Process() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="pt-6 pb-30 flex-shrink-0 px-3"
+          className="lg:pt-23 pt-10 lg:pb-20 pb-10 flex-shrink-0 px-3"
         >
-          <h1 className="text-[79px] lg:text-[160px] flex items-center font-regular text-white tracking-tighter text-left leading-tight">
+          <h1 className="text-[59px] lg:text-[160px] flex items-center font-regular text-white tracking-tighter text-left leading-tight">
             Process
           </h1>
         </motion.div>

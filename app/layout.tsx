@@ -13,19 +13,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
   },
 }
 
