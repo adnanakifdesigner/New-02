@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 const lora = Lora({ subsets: ['latin'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Lozinr',
+  description: 'Lozinr is a Branding agency',
+  generator: 'Lozinr',
   icons: {
     icon: [
       {
