@@ -1,0 +1,148 @@
+'use client'
+
+import { useState, useRef } from 'react'
+import { motion } from 'framer-motion'
+import { ProjectOverlay } from './project-overlay'
+import { projectsData } from '@/lib/projects-data'
+import { ArrowRight } from 'lucide-react'
+
+interface ProjectsProps {
+  openWorkOverlay: boolean
+  onWorkOverlayClose: () => void
+}
+
+export default function Projects({ openWorkOverlay, onWorkOverlayClose }: ProjectsProps) {
+  const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null)
+  const [overlayOpen, setOverlayOpen] = useState(openWorkOverlay)
+  const audioContextRef = useRef<AudioContext | null>(null)
+
+  const playLinkHoverSound = () => {
+    try {
+      // Initialize AudioContext on first interaction
+      if (!audioContextRef.current) {
+        audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)()
+      }
+
+      const context = audioContextRef.current
+
+      // Create a subtle, minimal sound
+      const oscillator = context.createOscillator()
+      const gainNode = context.createGain()
+
+      oscillator.connect(gainNode)
+      gainNode.connect(context.destination)
+
+      // Soft, gentle tone - single note
+      oscillator.frequency.setValueAtTime(600, context.currentTime)
+      oscillator.type = 'sine'
+
+      // Soft attack and fade out
+      gainNode.gain.setValueAtTime(0.05, context.currentTime)
+      gainNode.gain.exponentialRampToValueAtTime(0.01, context.currentTime + 0.12)
+
+      oscillator.start(context.currentTime)
+      oscillator.stop(context.currentTime + 0.12)
+    } catch (error) {
+      // Silently fail if audio context can't be created
+    }
+  }
+
+  const playBrandHoverSound = () => {
+    try {
+      // Initialize AudioContext on first interaction
+      if (!audioContextRef.current) {
+        audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)()
+      }
+
+      const context = audioContextRef.current
+
+      // Create a subtle, minimal sound
+      const oscillator = context.createOscillator()
+      const gainNode = context.createGain()
+
+      oscillator.connect(gainNode)
+      gainNode.connect(context.destination)
+
+      // Soft, gentle tone - single note
+      oscillator.frequency.setValueAtTime(600, context.currentTime)
+      oscillator.type = 'sine'
+
+      // Soft attack and fade out
+      gainNode.gain.setValueAtTime(0.05, context.currentTime)
+      gainNode.gain.exponentialRampToValueAtTime(0.01, context.currentTime + 0.12)
+
+      oscillator.start(context.currentTime)
+      oscillator.stop(context.currentTime + 0.12)
+    } catch (error) {
+      // Silently fail if audio context can't be created
+    }
+  }
+
+  const brandsList = [
+    { name: 'Lozinr', projectId: 0 },
+    { name: 'Cnyf', projectId: 1 },
+    { name: 'Luvena', projectId: 2 },
+    { name: 'Trevora', projectId: 3 },
+    { name: 'Finure Health', projectId: 4 },
+  ]
+
+  const handleBrandClick = (projectId: number) => {
+    if (projectsData[projectId]) {
+      setSelectedProject(projectsData[projectId])
+      setOverlayOpen(true)
+    }
+  }
+
+  return (
+    <>
+      <section className="bg-black px-4 md:px-6 py-20 md:py-20">
+        <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[600px] md:min-h-[700px]">
+          {/* Left Grid - Hero Content */}
+          <div className="flex flex-col justify-end h-full">
+            <h1 className="text-[28px] font-medium tracking-tight leading-tighter text-[#F2EDE4]">
+              <span className="inline">(→)</span> LOZINR is a branding studio run by <motion.a
+                href="https://www.instagram.com/masterpeees_adnan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline cursor-pointer"
+              >
+                Adnan Akif
+              </motion.a>. helping ambitious creative brands stand out with distinctive brand identity systems and story-driven strategy.
+            </h1>
+          </div>
+
+          {/* Right Grid - Brands List */}
+          <div className="flex flex-col justify-end">
+            <div className="space-y-0">
+              <p className="text-[14px] uppercase tracking-tight text-[#D9D9D9]/60 mb-0 pb-2 border-b border-[#D9D9D9]/50">
+                Creative Brands We&apos;ve Helped
+              </p>
+
+              {brandsList.map((brand, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-between py-2 px-0 border-b border-[#D9D9D9]/50 cursor-pointer"
+                  onClick={() => handleBrandClick(brand.projectId)}
+                >
+                  <span className="text-[16px] tracking-tight font-medium text-[#F2EDE4]">
+                    {brand.name}
+                  </span>
+                  <div className="flex items-center gap-2 md:gap-0">
+                    <ArrowRight className="w-5 h-5 text-[#F2EDE4] md:hidden" />
+                    <div className="hidden md:block">
+                      <ArrowRight className="w-5 h-5 text-[#F2EDE4]" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-black py-20 px-6">
+        <ProjectOverlay project={selectedProject} isOpen={overlayOpen} onClose={() => setOverlayOpen(false)} />
+      </section>
+    </>
+  )
+}
