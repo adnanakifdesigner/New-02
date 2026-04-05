@@ -121,7 +121,7 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
               {brandsList.map((brand, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center justify-between py-2 px-3 border-b border-[#D9D9D9]/50 cursor-pointer rounded transition-colors"
+                  className="flex items-center justify-between py-2 px-3 border-b border-[#D9D9D9]/50 cursor-pointer transition-colors"
                   onClick={() => handleBrandClick(brand.projectId)}
                   whileHover={{ backgroundColor: '#26775C' }}
                   onMouseEnter={playBrandHoverSound}
