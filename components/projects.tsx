@@ -119,21 +119,23 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
               </p>
 
               {brandsList.map((brand, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="flex items-center justify-between py-2 px-0 border-b border-[#D9D9D9]/50 cursor-pointer"
+                  className="flex items-center justify-between py-2 px-3 border-b border-[#D9D9D9]/50 cursor-pointer rounded transition-colors group"
                   onClick={() => handleBrandClick(brand.projectId)}
+                  whileHover={{ backgroundColor: 'rgba(38, 119, 92, 0.1)' }}
+                  onMouseEnter={playBrandHoverSound}
                 >
-                  <span className="text-[16px] tracking-tight font-medium text-[#F2EDE4]">
+                  <span className="text-[16px] tracking-tight font-medium text-[#e2e2e2]">
                     {brand.name}
                   </span>
-                  <div className="flex items-center gap-2 md:gap-0">
-                    <ArrowRight className="w-5 h-5 text-[#F2EDE4] md:hidden" />
+                  <div className="flex items-center gap-2 md:gap-0 px-2 py-1 rounded group-hover:bg-[#26775C] transition-colors">
+                    <ArrowRight className="w-5 h-5 text-[#e2e2e2] group-hover:text-white md:hidden" />
                     <div className="hidden md:block">
-                      <ArrowRight className="w-5 h-5 text-[#F2EDE4]" />
+                      <ArrowRight className="w-5 h-5 text-[#e2e2e2] group-hover:text-white" />
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

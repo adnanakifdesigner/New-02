@@ -239,7 +239,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
           >
             {/* Top Line - Shorter */}
             <motion.span
-              className="h-0.5 bg-[#26775C] rounded-full"
+              className="h-0.5 bg-[#e2e2e2] rounded-full"
               animate={{
                 width: isMenuOpen ? 24 : 18,
                 rotate: isMenuOpen ? 45 : 0,
@@ -252,7 +252,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
 
             {/* Middle Line - Full Width */}
             <motion.span
-              className="w-7 h-0.5 bg-[#26775C] rounded-full"
+              className="w-7 h-0.5 bg-[#e2e2e2] rounded-full"
               animate={{
                 opacity: isMenuOpen ? 0 : 1,
               }}
@@ -261,7 +261,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
 
             {/* Bottom Line - Shorter */}
             <motion.span
-              className="h-0.5 bg-[#26775C] rounded-full"
+              className="h-0.5 bg-[#e2e2e2] rounded-full"
               animate={{
                 width: isMenuOpen ? 24 : 12,
                 rotate: isMenuOpen ? -45 : 0,
