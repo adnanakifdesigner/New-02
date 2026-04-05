@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ProjectOverlay } from './project-overlay'
 import { projectsData } from '@/lib/projects-data'
-import { ArrowRight } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 
 interface ProjectsProps {
   openWorkOverlay: boolean
@@ -95,7 +95,7 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
 
   return (
     <>
-      <section className="bg-black px-4 md:px-6 py-20 md:py-20">
+      <section className="bg-black px-4 md:px-6 py-20 md:py-32">
         <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 min-h-[600px] md:min-h-[700px]">
           {/* Left Grid - Hero Content */}
           <div className="flex flex-col justify-end h-full">
@@ -104,7 +104,9 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
                 href="https://www.instagram.com/masterpeees_adnan/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline cursor-pointer"
+                className="underline cursor-pointer hover:opacity-70 transition-opacity"
+                onHoverStart={playLinkHoverSound}
+                whileHover={{ scale: 1.02 }}
               >
                 Adnan Akif
               </motion.a>. helping ambitious creative brands stand out with distinctive brand identity systems and story-driven strategy.
@@ -121,20 +123,41 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
               {brandsList.map((brand, index) => (
                 <motion.div
                   key={index}
-                  className="flex items-center justify-between py-2 px-3 border-b border-[#D9D9D9]/50 cursor-pointer transition-colors"
-                  onClick={() => handleBrandClick(brand.projectId)}
-                  whileHover={{ backgroundColor: '#26775C' }}
-                  onMouseEnter={playBrandHoverSound}
+                  className="group"
+                  whileHover="hover"
+                  initial="normal"
+                  onHoverStart={playBrandHoverSound}
                 >
-                  <span className="text-[16px] tracking-tight font-medium text-[#e2e2e2]">
-                    {brand.name}
-                  </span>
-                  <div className="flex items-center gap-2 md:gap-0">
-                    <ArrowRight className="w-5 h-5 text-[#e2e2e2] md:hidden" />
-                    <div className="hidden md:block">
-                      <ArrowRight className="w-5 h-5 text-[#e2e2e2]" />
-                    </div>
-                  </div>
+                  <motion.div
+                    className="flex items-center justify-between py-2 px-0 border-b border-[#D9D9D9]/50 cursor-pointer"
+                    variants={{
+                      normal: { backgroundColor: 'rgba(0, 0, 0, 0)' },
+                      hover: { backgroundColor: 'rgba(242, 237, 228)' }
+                    }}
+                    transition={{ duration: 0.3, ease: 'easeOut' }}
+                    onClick={() => handleBrandClick(brand.projectId)}
+                  >
+                    <motion.span
+                      className="text-[16px] tracking-tight font-medium"
+                      variants={{
+                        normal: { color: 'rgba(242, 237, 228)', x: 0 },
+                        hover: { color: 'rgba(0, 0, 0, 1)', x: 8 }
+                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut' }}
+                      suppressHydrationWarning
+                    >
+                      {brand.name}
+                    </motion.span>
+                    <motion.div
+                      variants={{
+                        normal: { x: 0, y: 0, color: 'rgba(242, 237, 228)' },
+                        hover: { x: -6, y: 0, color: 'rgba(0, 0, 0, 1)' }
+                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut' }}
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </motion.div>
+                  </motion.div>
                 </motion.div>
               ))}
             </div>
