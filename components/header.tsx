@@ -239,7 +239,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
           >
             {/* Top Line - Shorter */}
             <motion.span
-              className="h-0.5 bg-[#e2e2e2] rounded-full"
+              className="h-0.5 bg-[#26775C] rounded-full"
               animate={{
                 width: isMenuOpen ? 24 : 18,
                 rotate: isMenuOpen ? 45 : 0,
@@ -252,7 +252,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
 
             {/* Middle Line - Full Width */}
             <motion.span
-              className="w-7 h-0.5 bg-[#e2e2e2] rounded-full"
+              className="w-7 h-0.5 bg-[#26775C] rounded-full"
               animate={{
                 opacity: isMenuOpen ? 0 : 1,
               }}
@@ -261,7 +261,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
 
             {/* Bottom Line - Shorter */}
             <motion.span
-              className="h-0.5 bg-[#e2e2e2] rounded-full"
+              className="h-0.5 bg-[#26775C] rounded-full"
               animate={{
                 width: isMenuOpen ? 24 : 12,
                 rotate: isMenuOpen ? -45 : 0,
@@ -354,11 +354,11 @@ export default function Header({ onWorkClick }: HeaderProps) {
                   >
                     <span className="text-[14px] text-[#e2e2e2] tracking-tight font-medium">{social.name}</span>
                     <motion.div
-                      className="relative w-5 h-5 flex items-center justify-center rounded-full bg-[#e2e2e2] group-hover:bg-[#26775C] transition-colors duration-300"
+                      className="relative w-5 h-5 flex items-center justify-center rounded-full bg-[#26775C] group-hover:bg-[#26775C] transition-colors duration-300"
                       transition={{ duration: 0.3 }}
                     >
                       <motion.svg
-                        className="w-3 h-3 text-[#26775C] group-hover:text-[#e2e2e2] transition-colors duration-300"
+                        className="w-3 h-3 text-white group-hover:text-white transition-colors duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
