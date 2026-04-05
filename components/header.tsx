@@ -191,7 +191,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
       >
         <div
           className="flex items-center justify-between gap-4 py-3 px-4 lg:px-6 w-full"
-          style={{ backgroundColor: '#0C332A' }}
+          style={{ backgroundColor: '#1E81C4' }}
         >
           {/* Logo - Left Side */}
           <motion.div
@@ -279,7 +279,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
       <AnimatePresence>
         {isMounted && isMenuOpen && (
           <motion.div
-            className="fixed inset-0 bg-[#0C332A] backdrop-blur-sm z-40"
+            className="fixed inset-0 bg-[#1E81C4] backdrop-blur-sm z-40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -310,7 +310,7 @@ export default function Header({ onWorkClick }: HeaderProps) {
                 return (
                   <motion.div
                     key={link}
-                    className={`text-[70px] lg:text-[90px] tracking-tighter font-regular cursor-pointer transition-colors ${isActive ? 'text-[#F2EDE4]' : 'text-[#F2EDE4] hover:text-[#0C332A]'
+                    className={`text-[70px] lg:text-[90px] tracking-tighter font-regular cursor-pointer transition-colors ${isActive ? 'text-[#F2EDE4]' : 'text-[#F2EDE4] hover:text-[#1E81C4]'
                       }`}
                     initial={{ opacity: 0.3, y: -40 }}
                     animate={isMenuOpen ? { opacity: 1, y: 0 } : { opacity: 0.3, y: -40 }}
@@ -354,11 +354,11 @@ export default function Header({ onWorkClick }: HeaderProps) {
                   >
                     <span className="text-[14px] text-[#F2EDE4] tracking-tight font-medium">{social.name}</span>
                     <motion.div
-                      className="relative w-5 h-5 flex items-center justify-center rounded-full bg-[#F2EDE4] group-hover:bg-[#0C332A] transition-colors duration-300"
+                      className="relative w-5 h-5 flex items-center justify-center rounded-full bg-[#F2EDE4] group-hover:bg-[#1E81C4] transition-colors duration-300"
                       transition={{ duration: 0.3 }}
                     >
                       <motion.svg
-                        className="w-3 h-3 text-[#0C332A] group-hover:text-[#F2EDE4] transition-colors duration-300"
+                        className="w-3 h-3 text-[#1E81C4] group-hover:text-[#F2EDE4] transition-colors duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
