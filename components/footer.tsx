@@ -28,7 +28,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative w-full bg-[#0C332A] overflow-hidden">
+    <footer className="relative w-full bg-[#1E81C4] overflow-hidden">
       {/* Top Border Line */}
       <div className="w-full h-px bg-[#D9D9D9]/50" />
 
@@ -58,8 +58,8 @@ export default function Footer() {
                   <motion.span
                     className="block w-full px-4 md:px-6 py-2 md:py-3 font-semibold text-[16px] md:text-[18px] tracking-tighter uppercase text-center"
                     animate={{
-                      backgroundColor: hoveredCTA === 'contact' ? '#0C332A' : '#F2EDE4',
-                      color: hoveredCTA === 'contact' ? '#F2EDE4' : '#0c3523',
+                      backgroundColor: hoveredCTA === 'contact' ? '#1E81C4' : '#F2EDE4',
+                      color: hoveredCTA === 'contact' ? '#F2EDE4' : '#1E81C4',
                       border: hoveredCTA === 'contact' ? '2px solid #F2EDE4' : '2px solid transparent',
                     }}
                     transition={{ duration: 0.2 }}
@@ -85,8 +85,8 @@ export default function Footer() {
                   <motion.span
                     className="block w-full px-4 md:px-6 py-2 md:py-3 font-semibold text-[16px] md:text-[18px] tracking-tighter uppercase text-center"
                     animate={{
-                      backgroundColor: hoveredCTA === 'book' ? '#0C332A' : '#F2EDE4',
-                      color: hoveredCTA === 'book' ? '#F2EDE4' : '#0c3523',
+                      backgroundColor: hoveredCTA === 'book' ? '#1E81C4' : '#F2EDE4',
+                      color: hoveredCTA === 'book' ? '#F2EDE4' : '#1E81C4',
                       border: hoveredCTA === 'book' ? '2px solid #F2EDE4' : '2px solid transparent',
                     }}
                     transition={{ duration: 0.2 }}
