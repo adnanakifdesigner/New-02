@@ -132,7 +132,7 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
                     className="flex items-center justify-between py-2 px-0 border-b border-[#D9D9D9]/50 cursor-pointer"
                     variants={{
                       normal: { backgroundColor: 'rgba(0, 0, 0, 0)' },
-                      hover: { backgroundColor: 'rgba(242, 237, 228)' }
+                      hover: { backgroundColor: '#26775C' }
                     }}
                     transition={{ duration: 0.3, ease: 'easeOut' }}
                     onClick={() => handleBrandClick(brand.projectId)}
@@ -140,8 +140,8 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
                     <motion.span
                       className="text-[16px] tracking-tight font-medium"
                       variants={{
-                        normal: { color: 'rgba(242, 237, 228)', x: 0 },
-                        hover: { color: 'rgba(0, 0, 0, 1)', x: 8 }
+                        normal: { color: '#e2e2e2', x: 0 },
+                        hover: { color: '#ffffff', x: 8 }
                       }}
                       transition={{ duration: 0.3, ease: 'easeOut' }}
                       suppressHydrationWarning
@@ -150,8 +150,8 @@ export default function Projects({ openWorkOverlay, onWorkOverlayClose }: Projec
                     </motion.span>
                     <motion.div
                       variants={{
-                        normal: { x: 0, y: 0, color: 'rgba(242, 237, 228)' },
-                        hover: { x: -6, y: 0, color: 'rgba(0, 0, 0, 1)' }
+                        normal: { x: 0, y: 0, color: '#e2e2e2' },
+                        hover: { x: -6, y: 0, color: '#ffffff' }
                       }}
                       transition={{ duration: 0.3, ease: 'easeOut' }}
                     >
