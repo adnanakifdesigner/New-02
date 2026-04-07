@@ -32,18 +32,17 @@ export const projectsData: Project[] = [
       { label: 'Brand Design' }
     ],
     images: [
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2001.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2002.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2003.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2004.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2005.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2006.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2007.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2008.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2009.jpg'
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2010.jpg'
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2001.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2002.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2003.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2004.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2005.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2006.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2007.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2008.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2009.jpg',
+      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2010.jpg',
       'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2011.jpg'
-
     ],
     sections: {
       challenge: {
