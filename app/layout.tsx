@@ -56,22 +56,9 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: [
-      {
-        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    shortcut: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
-    apple: 'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Lozinr.png',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 }
 
