@@ -24,7 +24,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     name: 'Lozinr',
-    description: 'A bold branding initiative that transformed a lifestyle brand into a cultural icon. We created a visual identity that commanded attention across all touchpoints.',
+    description: 'A brand design studio built on one belief — that the most powerful ideas are hidden in plain sight. We created a complete visual identity system rooted in a single conceptual discovery.',
     category: 'Brand Design',
     year: '2024',
     ctas: [
@@ -32,38 +32,38 @@ export const projectsData: Project[] = [
       { label: 'Brand Design' }
     ],
     images: [
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2001.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2002.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2003.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2004.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2005.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2006.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2007.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2008.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2009.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2010.jpg',
-      'https://v7korlxmmmpzjkj8.private.blob.vercel-storage.com/Artboard%201%20copy%2011.jpg'
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2001-WcAWbaFGMsa8gBIagDbeIVAx3k4w5n.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2002-SnyZMlJgYUnNWQMuKP3csrwceRC8O3.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2003-QtKQZDFCFPcFf4qfS6S0wCpqSIFXZn.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2004-KlKPqT3JZgH1dklluiBxVQOa7Tt8ws.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2005-45N5ikNUEPvZlVVtT0815EeMEPuk62.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2006-7fswQvDb3Nj6BsAEdaUyXJ5SxHzGLT.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2007-hyn2O3bUWszqUxI8wxvfyPbi8PPh6h.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2008-n6DpfEgiAkwXXr4rTw7GqGrzdtB6oq.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2009-biW0QkZOSsDOg5QsRSe0KtJPdgLsxI.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2010-e6EmHrBBJeKV0ZH7mCTxYaL3adEY3V.jpg',
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Artboard%201%20copy%2011-ZPVPiZJDP6ZNDu6FhmtPLKokYyHzJS.jpg'
     ],
     sections: {
       challenge: {
         label: 'Challenge',
-        description: '#BrandIdentity #UrbaneStyle #CulturalIcon #LifestyleBrand #MarketPositioning'
+        description: 'Building a brand identity for a design studio from scratch presents a unique pressure — the studio itself becomes the proof of concept. Every design decision is scrutinised because the audience is designers, founders, and businesses who judge quality instantly. The challenge was to create an identity that was not just visually strong, but conceptually undeniable. It had to communicate intelligence, craft, and humanity — all without a single word.'
       },
       strategy: {
         label: 'Strategy',
-        description: '#BrandStrategy #GeometricDesign #ColorPalette #BrandSystem #TypographyDesign'
+        description: 'Rather than designing a logo first, we started with a question: what if the identity came entirely from the name itself? This constraint-led approach pushed us away from generic geometric shapes and toward something genuinely discovered. The strategy was to build the entire visual system around a single insight — one idea strong enough to carry every touchpoint from business card to website. Three colours, two fonts, one concept. Maximum restraint for maximum impact.'
       },
       identity: {
         label: 'Identity',
-        description: '#LogoDesign #VisualIdentity #TypefaceDesign #BrandConsistency #DesignSystem'
+        description: 'Inside the first two letters — "L" and "o" — we discovered a hidden face: two eyes and a nose formed by the negative space between them. This became the heart of Lozinr\'s identity. The logomark is both a letterform and a human expression — conceptual yet warm, minimal yet full of meaning. The colour system is built on Solid Black (#0E0C0A) as the primary canvas, Light Silver (#E2E2E2) for contrast and warmth, and Tribal Green (#26775C) as the accent that gives the brand its distinct, memorable personality. Typography is set in a single geometric sans-serif — clean, confident, and consistent across all applications.'
       },
       application: {
         label: 'Application',
-        description: '#BrandApplication #PackagingDesign #DigitalPlatforms #BrandGuidelines #ConsistentBranding'
+        description: 'The identity was applied across every touchpoint a design studio encounters — business cards, letterhead, envelopes, tote bags, and digital platforms. Each application was designed to feel intentional: the business card uses the green as the primary face with the logomark anchoring the front, while the back carries the wordmark bold and full-bleed in black. The stationery suite uses the green as a surface, with black materials layered on top — creating a visual system that is immediately recognisable across print and screen. The website carries the same palette and typographic rhythm, ensuring consistency from first impression to final interaction.'
       },
       outcome: {
         label: 'Outcome',
-        description: '#BrandSuccess #SocialMediaEngagement #SalesGrowth #BrandLeadership #MarketPosition'
+        description: 'The Lozinr identity achieved what every studio brand should — it became a portfolio piece in itself. The hidden face concept gives clients and collaborators an immediate story to hold onto, turning a logo into a talking point. The case study garnered over 268 views and 40 appreciations on Behance organically, with zero paid promotion. More importantly, it established a clear visual language that now extends across all Lozinr projects — a foundation that scales as the studio grows.'
       }
     }
   },

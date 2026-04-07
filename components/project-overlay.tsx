@@ -240,7 +240,7 @@ export function ProjectOverlay({ project, isOpen, onClose }: ProjectOverlayProps
                               transition={{ duration: 0.4, ease: [0.32, 0.72, 0, 1] }}
                               className="overflow-hidden bg-white/5 border-b border-white/20"
                             >
-                              <p className="text-[12px] text-white/60 tracking-tight leading-relaxed px-3 py-2 uppercase">
+                              <p className="text-[12px] text-white/60 tracking-tight leading-relaxed px-3 py-2">
                                 {section.content}
                               </p>
                             </motion.div>
