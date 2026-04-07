@@ -1,18 +1,11 @@
-'use client'
+import type { Metadata } from 'next'
+import HomeClient from '@/components/home-client'
 
-import { useState } from 'react'
-import Header from '@/components/header'
-import Projects from '@/components/projects'
-import Footer from '@/components/footer'
+export const metadata: Metadata = {
+  title: 'Lozinr — Brand Design Studio',
+  description: 'We build minimal, modern brand identities for tech startups and ambitious businesses. Strategy-led. Craft-driven.',
+}
 
 export default function Home() {
-  const [openWorkOverlay, setOpenWorkOverlay] = useState(false)
-
-  return (
-    <main className="min-h-screen bg-black">
-      <Header onWorkClick={() => setOpenWorkOverlay(true)} />
-      <Projects openWorkOverlay={openWorkOverlay} onWorkOverlayClose={() => setOpenWorkOverlay(false)} />
-      <Footer />
-    </main>
-  )
+  return <HomeClient />
 }
